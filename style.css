@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+body{
+    height: 100svh;
+    width: 100svw;
+
+    #firstSlide{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        h1{
+            font-size: 9svw;
+            text-wrap: nowrap;
+            position: relative;
+            width: 0svw;
+            top: 40%;
+            transition: all ease 2s;
+        }
+        .prezPhotosDivs{
+            position: absolute;
+            top: 15svw;
+            right: -20svw;
+            width: 20svw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all ease 2s;
+            /* justify-content: center; */
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 3svw;
+            }
+        }
+    }
+
+    #secondSlide{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        img{
+            position: absolute;
+            opacity: 0%;
+            transition: all 1s ease;
+            top: 0;
+            left: 0;
+            width: 100svw;
+        }
+    }
+}
