@@ -51,7 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('secondSlide').style.display = 'none'
                 document.getElementById('secondSlide').style.height = '0%'
             }, 1000)
-        },
+            document.getElementById('secondSlide').remove();
+        }, eleven: ()=>{
+            document.getElementById('conseildEtat').style.bottom = '0%'
+        }, twelve: ()=>{
+            document.getElementById('conseildEtat').style.bottom = '100svh'
+            document.getElementById('etreSouverain').style.bottom = '0%'
+        }, thirteen: ()=>{
+            document.getElementById('etreSouverain').style.bottom = '100svh'
+            document.getElementById('oldMap').style.bottom = '0%'
+        }, fourteen: ()=>{
+            document.getElementById('mapRonron').style.opacity = '100%'
+        }, fifteen: ()=>{
+            document.getElementById('mapArnaud').style.opacity = '100%'
+        }, sixteen: ()=>{
+            document.getElementById('mapAlfRhed').style.opacity = '100%'
+        }, seventeen: ()=>{
+            document.getElementById('troisiemeSlide').style.top = '-120%'
+            setTimeout(()=>{document.getElementById('troisiemeSlide').remove()}, 2000)
+        }
     }
 
 

@@ -57,4 +57,56 @@ body{
             width: 100svw;
         }
     }
+
+    #troisiemeSlide{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        transition: all ease .5s;
+        top: 0%;
+
+        #conseildEtat{
+            position: absolute;
+            height: 100%;
+            bottom: -100%;
+            transition: all ease .5s;
+        }
+
+        #etreSouverain{
+            position: absolute;
+            height: 100%;
+            bottom: -100%;
+            transition: all ease .5s;
+        }
+
+        #oldMap{
+            position: absolute;
+            width: 100%;
+            bottom: -150svh;
+            transition: all ease .5s;
+        }
+
+        p{
+            position: absolute;
+            opacity: 0%;
+            font-size: 4svw;
+            background-color: rgba(245, 222, 179, 0.674);
+            padding: .2svw;
+            border-radius: .2svw;
+        }
+        #mapRonron{
+            top: 5svw;
+        }
+        #mapArnaud{
+            bottom: 10svw;
+            right: 2svw;
+        }
+        #mapAlfRhed{
+            bottom: 3svw;
+            left: 5svw;
+        }
+    }
 }
+
